@@ -48,7 +48,7 @@ def get_source_page(url):
     for au in articles_urls:
         article_url = au.get('href')
         articles_urls_list.append(article_url)
-    with open('files/articles_urls.txt', 'w') as file:
+    with open('../files/articles_urls.txt', 'w') as file:
         for url in articles_urls_list:
             file.write(f'https://cointelegraph.com/{url}\n')
 
